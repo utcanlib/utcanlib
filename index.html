@@ -81,32 +81,10 @@
 </head>
 <body>
   <div class="container">
-    <h1>سرویس اطلاع رسانی کتابخانه مرکزی دانشکدگان کشاورزی دانشگاه تهران</h1>
+    <h1>سرویس اطلاع رسانی کتابخانه مرکزی<br>دانشکدگان کشاورزی دانشگاه تهران</h1>
     <p>تا زمان نمایش درخواست مجوز ارسال اعلان در این صفحه بمانید</p>
-    <buton><a href="https://canlib.ut.ac.ir">وبسایت</a></buton>
-    <buton><a href="https://t.me/utcanlib">کانال تلگرام</a></buton>
+    <button><a href="https://canlib.ut.ac.ir">وبسایت</a></button>
+    <button><a href="https://t.me/utcanlib">کانال تلگرام</a></button>
   </div>
-
-  <script>
-    const form = document.getElementById('subscriptionForm');
-    const emailInput = document.getElementById('email');
-    const successMessage = document.getElementById('successMessage');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const email = emailInput.value.trim();
-      if (email) {
-        // Mock API call to subscribe the user
-        console.log(`Subscribing email: ${email}`);
-
-        // Show success message
-        successMessage.style.display = 'block';
-        emailInput.value = '';
-      } else {
-        alert('Please enter a valid email address.');
-      }
-    });
-  </script>
 </body>
 </html>
